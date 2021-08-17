@@ -18,12 +18,12 @@ export const CustomerList = () => {
       {
         customers.map(customer => {
           return (
-            <div className="customer" id={`customer--${customer.id}`}>
+            <div className="customer" id={`customer--${customer.id}`} key={customer.id}>
               <div className="customer__name">
-                Name: { customer.name }
+                Name: {customer.name}
               </div>
               <div className="customer__address">
-              Address: { customer.address }
+                Address: {customer.address}
               </div>
             </div>
           )
